@@ -1,0 +1,14 @@
+
+<h1>BREAKING NEWS!</h1>
+
+<% @articles.each do |article| %>
+  <li>
+  <%= article['title'] %> - <%= article['description'] %><br/>
+    <a href="/articles/<%= article['id'] %>" target="_blank">
+      >>read the article<<
+  </a></li><br/>
+<% end %>
+
+<br/>
+
+<a href="/articles/new">>>ADD AN ARTICLE<<</a>

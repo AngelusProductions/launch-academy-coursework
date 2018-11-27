@@ -1,0 +1,43 @@
+
+html {
+  background-color: #e8ffe8;
+}
+
+header {
+  font-family: Georgia, serif;
+  font-size: 4em;
+  background-color: #21ff2f;
+  border-radius: 40px;
+  padding: .1em;
+  color: white;
+}
+
+.purple-banner {
+  background-color: #7526ff;
+}
+
+.green-banner {
+  background-color: #21ff2f;
+}
+
+.gray-banner {
+  background-color: #7c7c7c;
+}
+
+body {
+  font-family: Arial Black, sans-serif;
+  text-align: center;
+}
+
+#brusselin {
+  height: 50%;
+  width: 50%;
+  display: block;
+  border-radius: 150px;
+  margin: auto;
+}
+
+button {
+  display: block;
+  margin: auto;
+}

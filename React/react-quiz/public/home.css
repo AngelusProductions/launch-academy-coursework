@@ -1,0 +1,50 @@
+body {
+  background-color: #ccffff;
+  font-family: 'Courier';
+}
+
+#wrapper {
+  text-align: center;
+}
+
+h1 {
+  color: #3399ff;
+  font-size: 2em;
+}
+
+ul {
+  display: inline-block;
+  width: 300px;
+  border: 3px solid #00ff00;
+  border-radius: 10px;
+  background-color: white;'
+  text-align: center;
+  padding: 0;
+}
+
+li {
+  margin: 2em;
+  padding: 5px;
+  list-style: none;
+  color: white;
+  background: #3399ff;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+}
+
+.selected {
+  background-color: #89CFF0;
+}
+
+.correct, .incorrect {
+  font-size: 3em;
+  margin: 0;
+}
+
+.correct {
+  color: #00ff00;
+}
+
+.incorrect {
+  color: #ff0066;
+}

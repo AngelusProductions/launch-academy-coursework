@@ -1,0 +1,15 @@
+<h1>Recipes</h1>
+
+
+<ul>
+  <% @recipes.each do |recipe| %>
+    <li>
+      <%= recipe.title %>
+      <% @comments.each do |comment| %>
+        <% if recipe.id === comment.recipe_id.to_i %>
+          <br> ~ <%=comment.body%>
+        <% end %>
+      <% end %>
+    </li><br>
+  <% end %>
+</ul>

@@ -1,0 +1,24 @@
+body {
+  background-color: #fffcd1;
+}
+
+@keyframes blink {
+0% {opacity: 0; }
+50% {opacity: 1;}
+100% {opacity: 0;}
+}
+
+#blink {animation: blink 1s infinite;}
+
+.top-bar {
+  background-image: url(https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/1/13/Galaxy-wallpapers-19.jpg/revision/latest/scale-to-width-down/640?cb=20161115011126);
+}
+
+#menu-text {
+  color: indigo;
+}
+
+.menu {
+  border-radius: 25px;
+  margin: 0px 25px;
+}

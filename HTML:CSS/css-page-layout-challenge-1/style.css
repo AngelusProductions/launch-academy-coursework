@@ -1,0 +1,77 @@
+body {
+  font-family: 'Source Sans Pro';
+  background: #DBF1F2;
+  margin: 0;
+  color: white;
+}
+
+nav {
+  font-family: 'Alegreya';
+  background: #0884D6;
+  padding: 2rem;
+}
+
+.site-title, .sub-title {
+  margin: 0;
+}
+
+.site-title {
+  font-weight: bold;
+}
+
+.sub-title {
+  font-weight: lighter;
+}
+
+.quote {
+  background: #00CF5F;
+  margin: 2em 15em;
+  border: 5px solid #00AA4F;
+  padding: 1rem;
+  border-radius: .25em;
+  color: black;
+}
+
+.quoted-from {
+  font-style: italic;
+  text-align: right;
+}
+
+.try-it-now {
+  font-family: 'Alegreya';
+  background: #F6191C;
+  margin: 2em 25em;
+  border: 5px solid #C30A10;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+
+h3 a, h4 {
+  margin: 0;
+  color: white;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+h3 a {
+  font-size: 2rem;
+}
+
+.blue-page-section {
+  padding: 3rem;
+  background: #1F2F40;
+}
+
+footer, footer a {
+  font-size: 1rem;
+  background: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: #096EAF;
+}

@@ -1,0 +1,15 @@
+/* YOUR STYLING HERE */
+.page {
+  background-color: $light-blue;
+  padding-bottom: 10rem;
+
+  h1 {
+    text-align: center;
+    color: $blue;
+  }
+}
+
+a.complete {
+  text-decoration: line-through;
+  font-style: italic;
+}

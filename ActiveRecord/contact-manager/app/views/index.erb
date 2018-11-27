@@ -1,0 +1,48 @@
+<h1>Contacts</h1>
+
+<form type='text'>
+  <label for=:search>Search:</label>
+  <input type='text' id=:search name=:search />
+  <input type='submit' />
+</form>
+
+<br>
+
+<form type='text'>
+  <label for='offset'>Start:</label>
+  <input type='text' id='offset' name='offset' />
+
+  <label for='limit'># Results:</label>
+  <input type='text' id='limit' name='limit' />
+
+  <input type='submit' />
+</form>
+
+<ul>
+
+<% if params[:search] && params[:search] != ""%>
+  <% @search_array = params[:search].split() %>
+  <% @show = @contacts.where(first_name: @search_array[0], last_name: @search_array[1]) %>
+    <% if @show != [] %>
+        <li><a href="/contacts/<%=@show[0].id%>"><%= @show[0].name %> - <%= @show[0].phone_number %></a></li>
+      <% else %>
+        <% next %>
+    <% end %>
+  <% else %>
+    <% if params[:limit] %>
+      <% if params[:limit] == ""%>
+        <% @limit = @contacts.length %>
+      <% else %>
+        <% @limit = params[:limit] %>
+      <% end %>
+    <% end %>
+    <% @offset = params[:offset] %>
+    <% binding.pry %>
+    <% @contacts.limit(@limit).offset(@offset).each do |contact| %>
+      <li><a href="/contacts/<%=contact.id%>">
+      <%= contact.name %> - <%= contact.phone_number %>
+      </a></li><br/>
+  <% end %>
+<% end %>
+
+</ul>

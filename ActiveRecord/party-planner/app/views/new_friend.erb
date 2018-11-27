@@ -1,0 +1,24 @@
+
+<form method="post">
+
+  <label for="first_name">First Name:</label>
+  <input type="text"
+         id="first_name"
+         name="first_name"
+         value="<%= flash[:first_name] %>"/>
+
+  <label for="last_name">Last Name:</label>
+  <input type="text"
+         id="last_name"
+         name="last_name"
+         value="<%= flash[:last_name] %>"/>
+
+  <input type="submit" />
+
+  <%= @error %>
+
+</form>
+
+<br>
+
+<a href='/friends'>back</a>

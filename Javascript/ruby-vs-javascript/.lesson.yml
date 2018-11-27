@@ -1,0 +1,18 @@
+---
+title: "Ruby vs. JavaScript"
+type: "article"
+description: >
+  Provides a brief tour of the JavaScript programming language.
+
+  Covers:
+   * Including JS in an HTML document using <script> tags
+   * Comparisions between Ruby and JS
+   * Variable assignment
+   * Conditionals
+   * Datatypes
+   * Functions
+   * Arrays
+   * Objects
+tags: "javascript, dom"
+ignore:
+- "ruby-vs-javascript.md"

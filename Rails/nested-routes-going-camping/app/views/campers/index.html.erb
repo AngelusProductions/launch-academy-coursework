@@ -1,0 +1,15 @@
+<h1><%= @title %></h1>
+
+<ul>
+  <% if @campers.length > 0 %>
+    <% @campers.each do |camper| %>
+      <li>
+        <%= link_to camper.name, camper_supplies_path(camper.id) %>
+      </li>
+    <% end %>
+  <% else %>
+      <h2>NO ONE</h2>
+  <% end %>
+</ul>
+
+<p><%= link_to "back", campsites_path %></p>

@@ -1,0 +1,30 @@
+
+<h1><%= params[:id]</h1>
+
+<form method="post">
+
+  <label for="name">Name:</label>
+  <input type="text"
+         id="name"
+         name="name"
+         value="<%= flash[:name] %>">
+
+  <label for="location">Location:</label>
+  <input type="text"
+         id="location"
+         name="location"
+         value="<%= flash[:location] %>">
+
+  <label for="description">Description:</label>
+  <input type="text"
+         id="description"
+         name="description"
+         value="<%= flash[:description] %>">
+
+  <input type="submit" />
+
+</form>
+
+<br>
+
+<a href='/'>back</a>

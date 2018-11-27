@@ -1,0 +1,42 @@
+.branch {
+  height: 3rem;
+  background: #007800;
+  border-radius: 2rem;
+  margin: 1.4rem auto;
+}
+
+.branch-0 {
+  width: 3rem;
+}
+
+.branch-1 {
+  width: 5.8rem;
+}
+
+.branch-2 {
+  width: 11.5rem;
+}
+
+.branch-3 {
+  width: 17.5rem;
+}
+
+.branch-4 {
+  width: 23rem;
+}
+
+.branch-5 {
+  width: 29rem;
+}
+
+.branch-6 {
+  width: 34.5rem;
+}
+
+.trunk {
+  background: #A5000F;
+  height: 11.5rem;
+  width: 3rem;
+  border-radius: 2rem;
+  margin: auto;
+}

@@ -1,0 +1,38 @@
+
+ <h5><a href="/parties/<%= params[:id].to_i + 1 %>">Next</a></h5>
+ <h5><a href="/parties/<%= params[:id].to_i - 1 %>">Last</a></h5>
+
+<% party = @parties.find(params[:id].to_i) %>
+
+  <h1><%= party.name %></h1>
+  <h2><%= party.location %></h2>
+  <p>"<%= party.description %>"</p>
+
+  <h4><% if @invited != [] %>
+        <%= "Guestlist:" %>
+      <% end %></h4>
+  <ul>
+    <% @invited.each do |invitee| %>
+      <%= invitee.first_name %> <%= invitee.last_name %>
+      </li><br>
+    <% end %>
+  </ul>
+
+Invite Friend:
+  <form method="post">
+    <select id="name" name="name">
+      <% @friends.each do |friend| %>
+        <option>
+          <%= friend.first_name %> <%= friend.last_name %>
+        </option>
+      <% end %>
+    </select>
+
+    <input type="submit" value="Invite" ></input>
+  </form>
+
+  <a href='/parties/:id/edit'>
+
+  <br>
+
+<a href='/'>back</a>

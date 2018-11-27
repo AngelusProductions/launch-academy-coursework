@@ -1,0 +1,6 @@
+---
+title: "Bake Off JS"
+type: "exercise"
+description: "Get all the info on the contestants of series 5 of the Great British Bake Off."
+ignore:
+- "bake-off-js.md"

@@ -1,0 +1,21 @@
+
+<h1><%= @show.name %></h1>
+
+<p><%= @show.description %></p>
+
+<ul>
+<% @slaves.each do |slave| %>
+  <li><%= slave.first_name %> <%= slave.last_name %>
+  <br><%= slave.email %></li><br>
+<% end %>
+</ul>
+
+<ul>
+<% @game_plan.each do |plan| %>
+  <li><%= plan[:task] %>: <%= plan[:slave] %>
+    <br>Description: <%= plan[:description] %>
+    <br>Due: <%= plan[:due_date] %></li><br>
+<% end %>
+</ul>
+
+<a href='/'>back</a>

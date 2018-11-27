@@ -1,0 +1,22 @@
+
+<h1><%= @name %> </h1>
+<ul>
+  
+    <h2>ingredients</h2>
+    <% @ingredients.each do |ingredient| %>
+<li><%= ingredient %> </li>
+    <% end %>
+
+    <h2>directions</h2>
+    <% @directions.each do |direction| %>
+<li><%= direction %> </li>
+    <% end %>
+
+    <h2>reviews</h2>
+   <%  @reviews.each do |review| %>
+<li><%= review[:name] + " gave it a " +
+        review[:rating].to_s + " and said it was \"" +
+        review[:description] + "\""%></li>
+    <% end %>
+
+</ul>

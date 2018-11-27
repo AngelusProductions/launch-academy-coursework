@@ -1,0 +1,10 @@
+title: "Rails Partials"
+type: "exercise"
+description: "Use partials to to DRY up your views."
+tags: "rails, views, partials"
+behaviors:
+  - rails
+  - ruby_and_rspec
+  - capybara
+ignore:
+- "rails-partials.md"

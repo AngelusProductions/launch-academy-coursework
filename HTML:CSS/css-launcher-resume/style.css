@@ -1,0 +1,31 @@
+body {
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: center;
+  display: block;
+  color: #ff00d8;
+}
+
+.header {
+  color: #7d46fc;
+  font-size: 4em;
+}
+
+#babyface {
+  margin: auto;
+  height: 20%;
+  width: 20%;
+}
+
+p1 {
+  display: block;
+  padding: 1em;
+}
+
+a {
+  display: block;
+}
+
+#buyBuyBaby {
+  font-weight: bold;
+  font-size: 1.5em;
+}

@@ -1,0 +1,12 @@
+
+<% friends_sorted = Friend.order(first_name: :asc) %>
+
+<ul style="list-style-type:none">
+<% friends_sorted.each do |friend| %>
+  <li><%= friend.first_name %> <%= friend.last_name %></li>
+<% end %>
+</ul>
+
+<br>
+
+<a href='/friends/new'>add friend</a>

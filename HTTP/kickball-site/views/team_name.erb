@@ -1,0 +1,8 @@
+
+<% @league.teams.each do |team| %>
+  <% if team.name == params[:team_name] %>
+    <% team.position_data.each do |key, value| %>
+      <li><%= key + ": " + value + "\n"%></li>
+    <% end %>
+  <% end %>
+<% end %>

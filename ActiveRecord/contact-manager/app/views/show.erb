@@ -1,0 +1,5 @@
+
+<% @show = @contacts.find(params['id']) %>
+<%= "#{@show.name} - #{@show.phone_number}" %>
+<br>
+<a href='/'>Back</a>

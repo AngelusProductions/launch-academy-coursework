@@ -1,0 +1,11 @@
+---
+title: "Faking Fetch with fetch-mock"
+type: "article"
+description: "Apply TDD to components that fetch external data"
+tags: "react, fetch, ajax, javascript"
+behaviors:
+  - react_on_node
+  - react_testing
+  - sinatra
+ignore:
+- "faking-fetch-with-fetch-mock.md"
